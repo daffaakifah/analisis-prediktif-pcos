@@ -80,7 +80,7 @@ Perumusannya antara lain [[2]](https://locus.rivierapublishing.id/index.php/jl/a
 - C. Recall : mengukur pecahan kasus yang terjadi dan diprediksi tepat oleh AI. Rumus → (TP)/(TP+FN)
   
 <br>
-Keterangan [[3]](https://jurnal.tau.ac.id/index.php/siskom-kb/article/view/173): <br>
+Keterangan [[3]](https://jurnal.tau.ac.id/index.php/siskom-kb/article/view/173) : <br>
 - TP : True Positive (TP), yaitu data  positif  yang terprediksi benar. <br>
 - TN : True Negative (TN), yaitu data negatif yang terprediksi dengan benar <br>
 - FP : False Positive (FP),  yaitu data  negatif tapi terprediksi sebagai data positif. <br>
@@ -131,9 +131,9 @@ Berikut merupakan hasil metriks akurasi dalam bentuk diagram batang:
 
 <br>
 Hasil akurasi Random Forest (RF) dan Decision Tree (DT) yang tidak jauh berbeda dapat terjadi karena beberapa alasan:
-1. Jika dataset memiliki sedikit fitur atau pola yang mudah dipelajari, DT tunggal mungkin sudah mencapai performa maksimal. RF (yang terdiri dari banyak DT) tidak selalu meningkatkan akurasi dalam kasus ini [[10]](https://www.researchgate.net/publication/284219299_A_Random_Forest_Guided_Tour).
+1. Jika dataset memiliki sedikit fitur atau pola yang mudah dipelajari, DT tunggal mungkin sudah mencapai performa maksimal. RF (yang terdiri dari banyak DT) tidak selalu meningkatkan akurasi dalam kasus ini [[10]](https://www.researchgate.net/publication/284219299_A_Random_Forest_Guided_Tour) .
 2. Ketidakseimbangan Kelas (Class Imbalance).
-Jika dataset sangat tidak seimbang, metrik akurasi bisa menyesatkan. RF dan DT mungkin sama-sama memprediksi kelas mayoritas dengan baik tetapi gagal menangkap minoritas [[11]](https://www.jmlr.org/papers/volume15/delgado14a/delgado14a.pdf).
+Jika dataset sangat tidak seimbang, metrik akurasi bisa menyesatkan. RF dan DT mungkin sama-sama memprediksi kelas mayoritas dengan baik tetapi gagal menangkap minoritas [[11]](https://www.jmlr.org/papers/volume15/delgado14a/delgado14a.pdf) .
 
 Dari paparan sebelumnya dapat diketahui bahwa model dengan algoritma Decision Tree memiliki kinerja yang lebih baik. Untuk itu model tersebut yang akan dipilih untuk digunakan.
 
