@@ -69,7 +69,7 @@ Pada tahap modeling ini dibuat beberapa model dengan algoritma yang berbeda-beda
 Evaluasi performa model dilakukan menggunakan berbagai metrik evaluasi yang umum digunakan dalam klasifikasi, seperti akurasi, presisi, recall, dan skor F1. Akurasi mengukur sejauh mana model dapat mengklasifikasikan dengan benar, sedangkan presisi mengukur sejauh mana model memberikan prediksi yang benar untuk kelas positif. Recall mengukur sejauh mana model dapat mendeteksi dengan benar kelas positif, sedangkan skor F1 adalah penggabungan antara presisi dan recall [[sumber]](https://jurnal.umt.ac.id/index.php/jt/article/viewFile/9099/4575).
 <br>
 Berikut adalah metrik evaluasi untuk 2 model dengan akurasi tertinggi:
-'''sh
+```sh
 Decision Tree:
 Accuracy: 0.995
 Classification Report:
@@ -81,9 +81,9 @@ Classification Report:
     accuracy                           0.99       200
    macro avg       1.00      0.99      0.99       200
 weighted avg       1.00      0.99      0.99       200
-'''
+```
 <br>
-'''sh
+```sh
 Random Forest:
 Accuracy: 0.99
 Classification Report:
@@ -95,7 +95,7 @@ Classification Report:
     accuracy                           0.99       200
    macro avg       0.99      0.97      0.98       200
 weighted avg       0.99      0.99      0.99       200
-'''
+```
 <br>
 Interpretasi hasil:
 - Recall Lebih Baik untuk Kelas Minoritas (Kelas 1):
