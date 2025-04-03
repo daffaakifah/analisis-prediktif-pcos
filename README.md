@@ -130,6 +130,7 @@ Interpretasi hasil: <br>
 - Kesederhanaan Model: DT lebih mudah diinterpretasi (visualisasi pohon) dan lebih cepat dalam prediksi dibanding RF yang kompleks.
 <br>
 
+<br>
 Berikut merupakan hasil metriks akurasi dalam bentuk diagram batang:
 
 ![Perbandingan Akurasi Model ML](https://github.com/daffaakifah/analisis-prediktif-pcos/blob/main/perbandingan%20akurasi%20model%20ml.png)
