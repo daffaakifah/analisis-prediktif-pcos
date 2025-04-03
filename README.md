@@ -63,31 +63,76 @@ Teknik yang digunakan dalam penyiapan data *(Data Preparation)* yaitu:
 - **Scaling Fitur** merupakan  cara  untuk  membuat numberical  datapada  dataset  memiliki rentang  nilai  yang  sama.  Dengan  artian  tidak  ada  satu  pun  variabel  data yang  mendominasi variabel data lainnya [[sumber]](https://openlibrarypublications.telkomuniversity.ac.id/index.php/engineering/article/view/14710). 
 
 ## Modeling
-Pada tahap modeling ini dibuat beberapa model dengan algoritma yang berbeda-beda. Pada proyek ini akan dibuat 4 model, diantaranya yaitu menggunakan Logistic Regression, Decision Tree, Random Forest, dan Support Vector Machine.
-Setelah melatih keempat model tersebut, didapatkan metriks akurasi sebagai berikut seperti pada diagram di bawah ini.
-
-![Perbandingan Akurasi Model](https://i.postimg.cc/ZnwYHYdV/Screenshot-5.png)
-
-Dari hasil tersebut dapat diketahui bahwa model dengan algoritma Random Forest memiliki kinerja yang lebih baik. Untuk itu model tersebut yang akan dipilih untuk digunakan.
+Pada tahap modeling ini dibuat beberapa model dengan algoritma yang berbeda-beda. Pada proyek ini dataset dilatih dengan 4 model, yaitu menggunakan Logistic Regression, Decision Tree, Random Forest, dan Support Vector Machine.
 
 ## Evaluation
-Pada proyek ini, model yang dibuat merupakan kasus klasifikasi dan menggunakan metriks akurasi.
+Evaluasi performa model dilakukan menggunakan berbagai metrik evaluasi yang umum digunakan dalam klasifikasi, seperti akurasi, presisi, recall, dan skor F1. Akurasi mengukur sejauh mana model dapat mengklasifikasikan dengan benar, sedangkan presisi mengukur sejauh mana model memberikan prediksi yang benar untuk kelas positif. Recall mengukur sejauh mana model dapat mendeteksi dengan benar kelas positif, sedangkan skor F1 adalah penggabungan antara presisi dan recall [[sumber]](https://jurnal.umt.ac.id/index.php/jt/article/viewFile/9099/4575).
+<br>
+Berikut adalah metrik evaluasi untuk 2 model dengan akurasi tertinggi:
+'''sh
+Decision Tree:
+Accuracy: 0.995
+Classification Report:
+              precision    recall  f1-score   support
 
-Akurasi merupakan kalkulasi presentase jumlah ketepatan prediksi dari jumlah seluruh data yang diprediksi. Nilai akurasi dapat dihitung dengan rumus berikut.
+           0       0.99      1.00      1.00       161
+           1       1.00      0.97      0.99        39
 
-![accuracy](https://i.postimg.cc/TwSPSscb/Screenshot-15.png)
+    accuracy                           0.99       200
+   macro avg       1.00      0.99      0.99       200
+weighted avg       1.00      0.99      0.99       200
+'''
+<br>
+'''sh
+Random Forest:
+Accuracy: 0.99
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       161
+           1       1.00      0.95      0.97        39
+
+    accuracy                           0.99       200
+   macro avg       0.99      0.97      0.98       200
+weighted avg       0.99      0.99      0.99       200
+'''
+<br>
+Interpretasi hasil:
+- Recall Lebih Baik untuk Kelas Minoritas (Kelas 1):
+DT memiliki recall 0.97 (hanya 3% false negatives) vs RF 0.95 (5% false negatives).
+Ini penting jika tujuan utama adalah mendeteksi kasus positif (pasien PCOS).
+- DT lebih konsisten dalam menangkap kasus positif (recall lebih tinggi).
+- Kesederhanaan Model: DT lebih mudah diinterpretasi (visualisasi pohon) dan lebih cepat dalam prediksi dibanding RF yang kompleks.
+<br>
+
+Berikut merupakan hasil metriks akurasi dalam bentuk diagram batang:
+
+![Perbandingan Akurasi Model ML](https://github.com/daffaakifah/analisis-prediktif-pcos/blob/main/perbandingan%20akurasi%20model%20ml.png)
+
+<br>
+Hasil akurasi Random Forest (RF) dan Decision Tree (DT) yang tidak jauh berbeda dapat terjadi karena beberapa alasan:
+1. Jika dataset memiliki sedikit fitur atau pola yang mudah dipelajari, DT tunggal mungkin sudah mencapai performa maksimal. RF (yang terdiri dari banyak DT) tidak selalu meningkatkan akurasi dalam kasus ini [[5]](https://www.researchgate.net/publication/284219299_A_Random_Forest_Guided_Tour).
+2. Ketidakseimbangan Kelas (Class Imbalance).
+Jika dataset sangat tidak seimbang, metrik akurasi bisa menyesatkan. RF dan DT mungkin sama-sama memprediksi kelas mayoritas dengan baik tetapi gagal menangkap minoritas [[6]](https://www.jmlr.org/papers/volume15/delgado14a/delgado14a.pdf).
+
+Dari paparan sebelumnya dapat diketahui bahwa model dengan algoritma Decision Tree memiliki kinerja yang lebih baik. Untuk itu model tersebut yang akan dipilih untuk digunakan.
 
 ## Saran:
-- Menambahkan lagi dataset dengan rentang usia beragam agar mengetahui pengaruh usia terhadap PCOS [[9]](https://etd.umy.ac.id/id/eprint/115/).
-- Menambahkan data faktor genetik agar melihqat pengaruhnya dalam faktor prediksi PCOS [[9]](https://etd.umy.ac.id/id/eprint/115/).
+- Menambahkan lagi dataset dengan rentang usia beragam agar mengetahui pengaruh usia terhadap PCOS [[7]](https://etd.umy.ac.id/id/eprint/115/).
+- Menambahkan data faktor genetik agar melihatt pengaruhnya dalam faktor prediksi PCOS [[7]](https://etd.umy.ac.id/id/eprint/115/).
 
 ## Referensi:
 [[1]](https://jurnal.upertis.ac.id/index.php/JKP/article/view/971/436) Kurniawati, E., Hutabarat, N., & Noviasari, E. (2023). Status Gizi dan Gaya Hidup Wanita dengan Sindrom Ovarium Polikistik (PCOS) di Yogyakarta. JURNAL KESEHATAN PERINTIS, 10(1), 74-82. https://doi.org/10.33653/jkp.v10i1.971 <br>
 [[2]](https://journal.unpacti.ac.id/index.php/pjphsr/article/view/1727) Noviyanti, N., Johan, R., & Ruqaiyah, R. (2024). The Effect of Menstrual Cycle and Body Mass Index on The Risk of Polycystic Ovarian Syndrome (PCOS) in Adolescent Females in Tarakan City. ancasakti ournal f ublic ealth cience nd esearch, 4(3), 89-96. https://doi.org/10.47650/pjphsr.v4i3.1727 <br>
 [[3]](https://www.frontiersin.org/journals/reproductive-health/articles/10.3389/frph.2024.1475132/full) Bushell, A., & Crespi, B. J. (2024). The evolutionary basis of elevated testosterone in women with polycystic ovary syndrome: An overview of systematic reviews of the evidence. Frontiers in Reproductive Health, 6, Article 1475132. https://doi.org/10.3389/frph.2024.1475132 <br>
 [[4]](https://oaj.jurnalhst.com/index.php/jim/article/view/4513) Alamsyah, F., Halim, B., & Tanjung, T. (2024). Kadar serum anti-mullerian hormon sebagai alternatif pemeriksaan jumlah folikel antral dalam menegakkan diagnosa polycystic ovarian syndrome. Jurnal Ilmiah Multidisipliner (JIM), 8(9), 174.<br>
+
 [[sumber]](https://jsi.politala.ac.id/index.php/JSI/article/view/622) Oktafiani, R., Hermawan, A., & Avianto, D. (2023). Pengaruh komposisi split data terhadap performa klasifikasi penyakit kanker payudara menggunakan algoritma machine learning. Jurnal Sains dan Informatika, 9(1), 19. https://doi.org/10.34128/jsi.v9i1.622
+
 [[sumber]](https://openlibrarypublications.telkomuniversity.ac.id/index.php/engineering/article/view/14710) Aryuni, A. F., Putrada, A. G., & Abdurohman, M. (2021). Klasifikasi penumpang naik dan turun dengan sensor load cell menggunakan ekstraksi fitur dan support vector machine. e-Proceeding of Engineering, 8(2), 3197.
+
+ [[sumber]](https://jurnal.umt.ac.id/index.php/jt/article/viewFile/9099/4575) Fadli, M., & Saputra, R. A. (2023). Klasifikasi dan evaluasi performa model Random Forest untuk prediksi stroke [Classification and evaluation of performance models Random Forest for stroke prediction]. Jurnal Teknik, 15(2), 45–60. http://jurnal.umt.ac.id/index.php/jt/index
+ 
 [[5]](https://www.researchgate.net/publication/284219299_A_Random_Forest_Guided_Tour) Biau, Gérard & Scornet, Erwan. (2015). A Random Forest Guided Tour. TEST. 25. 10.1007/s11749-016-0481-7. <br>
 [[6]](https://www.jmlr.org/papers/volume15/delgado14a/delgado14a.pdf) Fernández-Delgado, M., et al. (2014). Do we need hundreds of classifiers to solve real world classification problems? JMLR, 15(1), 3133-3181 <br>
 [[9]](https://etd.umy.ac.id/id/eprint/115/) Kamila Sedah Kirana. (2020). Hubungan Antara Faktor Resiko Usia, Riwayat Keluarga, dan Usia Menarkhe Terhadap Kejadian Polycystic Ovarian Syndrome (PCOS). S1 thesism, Universitas Muhammadiyah Yogyakarta.
