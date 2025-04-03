@@ -65,7 +65,7 @@ Pada dataset ini secara acak dibagi menjadi dua subset: latih (80%) dan uji (20%
 # Split dataset
 X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 ```
-- **Scaling Fitur** merupakan  cara  untuk  membuat numberical  datapada  dataset  memiliki rentang  nilai  yang  sama.  Dengan  artian  tidak  ada  satu  pun  variabel  data yang  mendominasi variabel data lainnya [[6]](https://openlibrarypublications.telkomuniversity.ac.id/index.php/engineering/article/view/14710). 
+- **Scaling Fitur** merupakan  cara  untuk  membuat numberical  datapada  dataset  memiliki rentang  nilai  yang  sama.  Dengan  artian  tidak ada satu pun variabel data yang mendominasi variabel data lainnya [[6]](https://openlibrarypublications.telkomuniversity.ac.id/index.php/engineering/article/view/14710). 
 
 ## Modeling
 Pada tahap modeling ini dibuat beberapa model dengan algoritma yang berbeda-beda. Pada proyek ini dataset dilatih dengan 4 model, yaitu menggunakan Logistic Regression, Decision Tree, Random Forest, dan Support Vector Machine. Berikut masing-masing penjelasannya:
@@ -84,7 +84,7 @@ Perumusannya antara lain [[7]](https://locus.rivierapublishing.id/index.php/jl/a
 - C. Recall : mengukur pecahan kasus yang terjadi dan diprediksi tepat oleh AI. Rumus → (TP)/(TP+FN)
   
 <br>
-Keterangan [[8]](https://jurnal.tau.ac.id/index.php/siskom-kb/article/view/173):
+Keterangan [8]:
 <br>
 - TP : True Positive (TP), yaitu data  positif  yang terprediksi benar. <br>
 - TN : True Negative (TN), yaitu data negatif yang terprediksi dengan benar <br>
@@ -136,9 +136,9 @@ Berikut merupakan hasil metriks akurasi dalam bentuk diagram batang:
 
 <br>
 Hasil akurasi Random Forest (RF) dan Decision Tree (DT) yang tidak jauh berbeda dapat terjadi karena beberapa alasan: <br>
-1. Jika dataset memiliki sedikit fitur atau pola yang mudah dipelajari, DT tunggal mungkin sudah mencapai performa maksimal. RF (yang terdiri dari banyak DT) tidak selalu meningkatkan akurasi dalam kasus ini [[10]](https://www.researchgate.net/publication/284219299_A_Random_Forest_Guided_Tour) <br>
+1. Jika dataset memiliki sedikit fitur atau pola yang mudah dipelajari, DT tunggal mungkin sudah mencapai performa maksimal. RF (yang terdiri dari banyak DT) tidak selalu meningkatkan akurasi dalam kasus ini [10].
 2. Ketidakseimbangan Kelas (Class Imbalance).
-Jika dataset sangat tidak seimbang, metrik akurasi bisa menyesatkan. RF dan DT mungkin sama-sama memprediksi kelas mayoritas dengan baik tetapi gagal menangkap minoritas [[11]](https://www.jmlr.org/papers/volume15/delgado14a/delgado14a.pdf). <br>
+Jika dataset sangat tidak seimbang, metrik akurasi bisa menyesatkan. RF dan DT mungkin sama-sama memprediksi kelas mayoritas dengan baik tetapi gagal menangkap minoritas [11] <br>
 
 Dari paparan sebelumnya dapat diketahui bahwa model dengan algoritma Decision Tree memiliki kinerja yang lebih baik. Untuk itu model tersebut yang akan dipilih untuk digunakan.
 
