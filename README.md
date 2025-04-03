@@ -65,7 +65,7 @@ Pada dataset ini secara acak dibagi menjadi dua subset yaitu data latih (80%) da
 # Split dataset
 X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 ```
-- **Scaling Fitur** adalah teknik standarisasi yang menyamakan rentang nilai data numerik dalam dataset, sehingga semua variabel memiliki skala yang seimbang tanpa dominasi satu variabel terhadap lainnya. [[6]](https://openlibrarypublications.telkomuniversity.ac.id/index.php/engineering/article/view/14710). 
+- **Scaling Fitur** adalah teknik standarisasi yang menyamakan rentang nilai data numerik dalam dataset, sehingga semua variabel memiliki skala yang seimbang tanpa dominasi satu variabel terhadap lainnya. [[6]](https://openlibrarypublications.telkomuniversity.ac.id/index.php/engineering/article/view/14710). Scaling dilakukan dalam tahap data preparation dan dilakukan setelah pembagian train-test split adalah untuk menghindari data leakage.
 
 ## Modeling
 Pada tahap modeling ini dibuat beberapa model dengan algoritma yang berbeda-beda. Pada proyek ini dataset dilatih dengan 4 model, yaitu menggunakan Logistic Regression, Decision Tree, Random Forest, dan Support Vector Machine. Berikut masing-masing penjelasannya:
