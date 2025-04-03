@@ -83,6 +83,7 @@ Classification Report:
 weighted avg       1.00      0.99      0.99       200
 ```
 <br>
+
 ```sh
 Random Forest:
 Accuracy: 0.99
