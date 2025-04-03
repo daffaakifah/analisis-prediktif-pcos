@@ -13,7 +13,7 @@ Berdasarkan latar belakang di atas, berikut ini merupakan rincian masalah yang d
 ### Goals
 Tujuan dari proyek ini adalah:
 1.	Mengembangkan model machine learning yang akurat untuk mendiagnosis PCOS.
-2.  Membandingkan beberapa algoritma model sehingga ditemukan akurasi yang paling baik untuk memprediksikan PCOS.
+2. Membandingkan beberapa algoritma model sehingga ditemukan akurasi yang paling baik untuk memprediksikan PCOS.
 
 ### Solution Statements
 Upaya yang dilakukan untuk mencapai tujuan tersebut antara lain:
@@ -37,6 +37,7 @@ Dataset yang digunakan digunakan dalam laporan ini bersumber dari kaggle serta m
 <br>
 Dataset tersebut tidak memiliki baik missing value maupun data yang duplikat.
 <br>
+<br>
 Berikut merupakan matriks korelasi antar fitur:
 
 ![matriks_korelasi_pcos](https://github.com/daffaakifah/analisis-prediktif-pcos/blob/main/matriks%20korelasi%20pcos.png)
@@ -58,8 +59,8 @@ Korelasi tertinggi dengan Menstrual_Irregularity (0.47) dan BMI (0.38), diikuti 
 
 ## Data Preparation
 Teknik yang digunakan dalam penyiapan data *(Data Preparation)* yaitu:
-- **Split Data** atau pembagian dataset menjadi data latih dan data uji. Proses ini membantu mencegah overfitting dan underfitting dengan menjaga data pengujian terpisah dari data pelatihan, sehingga kinerja prediktif model dapat dinilai secara akurat.
-- **Scaling Fitur**
+- **Split Data** merupakan proses untuk membagi antara data latih dan data uji. Split data adalah salah satu dari beberapa aspek yang  mempengaruhi seberapa baik kinerja model klasifikasi pada algoritma [[sumber]](https://jsi.politala.ac.id/index.php/JSI/article/view/622).
+- **Scaling Fitur** merupakan  cara  untuk  membuat numberical  datapada  dataset  memiliki rentang  nilai  yang  sama.  Dengan  artian  tidak  ada  satu  pun  variabel  data yang  mendominasi variabel data lainnya [[sumber]](https://openlibrarypublications.telkomuniversity.ac.id/index.php/engineering/article/view/14710). 
 
 ## Modeling
 Pada tahap modeling ini dibuat beberapa model dengan algoritma yang berbeda-beda. Pada proyek ini akan dibuat 4 model, diantaranya yaitu menggunakan Logistic Regression, Decision Tree, Random Forest, dan Support Vector Machine.
@@ -81,12 +82,14 @@ Akurasi merupakan kalkulasi presentase jumlah ketepatan prediksi dari jumlah sel
 - Menambahkan data faktor genetik agar melihqat pengaruhnya dalam faktor prediksi PCOS [[9]](https://etd.umy.ac.id/id/eprint/115/).
 
 ## Referensi:
-[[1]](https://jurnal.upertis.ac.id/index.php/JKP/article/view/971/436)Kurniawati, E., Hutabarat, N., & Noviasari, E. (2023). Status Gizi dan Gaya Hidup Wanita dengan Sindrom Ovarium Polikistik (PCOS) di Yogyakarta. JURNAL KESEHATAN PERINTIS, 10(1), 74-82. https://doi.org/10.33653/jkp.v10i1.971 <br>
-[[2]](https://journal.unpacti.ac.id/index.php/pjphsr/article/view/1727)Noviyanti, N., Johan, R., & Ruqaiyah, R. (2024). The Effect of Menstrual Cycle and Body Mass Index on The Risk of Polycystic Ovarian Syndrome (PCOS) in Adolescent Females in Tarakan City. ancasakti ournal f ublic ealth cience nd esearch, 4(3), 89-96. https://doi.org/10.47650/pjphsr.v4i3.1727 <br>
-[[3]](https://www.frontiersin.org/journals/reproductive-health/articles/10.3389/frph.2024.1475132/full)Bushell, A., & Crespi, B. J. (2024). The evolutionary basis of elevated testosterone in women with polycystic ovary syndrome: An overview of systematic reviews of the evidence. Frontiers in Reproductive Health, 6, Article 1475132. https://doi.org/10.3389/frph.2024.1475132 <br>
-[[4]](https://oaj.jurnalhst.com/index.php/jim/article/view/4513)Alamsyah, F., Halim, B., & Tanjung, T. (2024). Kadar serum anti-mullerian hormon sebagai alternatif pemeriksaan jumlah folikel antral dalam menegakkan diagnosa polycystic ovarian syndrome. Jurnal Ilmiah Multidisipliner (JIM), 8(9), 174.<br>
-[[5]](https://www.researchgate.net/publication/284219299_A_Random_Forest_Guided_Tour)Biau, Gérard & Scornet, Erwan. (2015). A Random Forest Guided Tour. TEST. 25. 10.1007/s11749-016-0481-7. <br>
-[[6]](https://www.jmlr.org/papers/volume15/delgado14a/delgado14a.pdf)Fernández-Delgado, M., et al. (2014). Do we need hundreds of classifiers to solve real world classification problems? JMLR, 15(1), 3133-3181 <br>
-[[7]](https://link.springer.com/article/10.1023/A:1010933404324)Breiman, L. (2001). Random forests. Machine Learning, 45(1), 5-32. <br>
+[[1]](https://jurnal.upertis.ac.id/index.php/JKP/article/view/971/436) Kurniawati, E., Hutabarat, N., & Noviasari, E. (2023). Status Gizi dan Gaya Hidup Wanita dengan Sindrom Ovarium Polikistik (PCOS) di Yogyakarta. JURNAL KESEHATAN PERINTIS, 10(1), 74-82. https://doi.org/10.33653/jkp.v10i1.971 <br>
+[[2]](https://journal.unpacti.ac.id/index.php/pjphsr/article/view/1727) Noviyanti, N., Johan, R., & Ruqaiyah, R. (2024). The Effect of Menstrual Cycle and Body Mass Index on The Risk of Polycystic Ovarian Syndrome (PCOS) in Adolescent Females in Tarakan City. ancasakti ournal f ublic ealth cience nd esearch, 4(3), 89-96. https://doi.org/10.47650/pjphsr.v4i3.1727 <br>
+[[3]](https://www.frontiersin.org/journals/reproductive-health/articles/10.3389/frph.2024.1475132/full) Bushell, A., & Crespi, B. J. (2024). The evolutionary basis of elevated testosterone in women with polycystic ovary syndrome: An overview of systematic reviews of the evidence. Frontiers in Reproductive Health, 6, Article 1475132. https://doi.org/10.3389/frph.2024.1475132 <br>
+[[4]](https://oaj.jurnalhst.com/index.php/jim/article/view/4513) Alamsyah, F., Halim, B., & Tanjung, T. (2024). Kadar serum anti-mullerian hormon sebagai alternatif pemeriksaan jumlah folikel antral dalam menegakkan diagnosa polycystic ovarian syndrome. Jurnal Ilmiah Multidisipliner (JIM), 8(9), 174.<br>
+[[sumber]](https://jsi.politala.ac.id/index.php/JSI/article/view/622) Oktafiani, R., Hermawan, A., & Avianto, D. (2023). Pengaruh komposisi split data terhadap performa klasifikasi penyakit kanker payudara menggunakan algoritma machine learning. Jurnal Sains dan Informatika, 9(1), 19. https://doi.org/10.34128/jsi.v9i1.622
+[[sumber]](https://openlibrarypublications.telkomuniversity.ac.id/index.php/engineering/article/view/14710) Aryuni, A. F., Putrada, A. G., & Abdurohman, M. (2021). Klasifikasi penumpang naik dan turun dengan sensor load cell menggunakan ekstraksi fitur dan support vector machine. e-Proceeding of Engineering, 8(2), 3197.
+[[5]](https://www.researchgate.net/publication/284219299_A_Random_Forest_Guided_Tour) Biau, Gérard & Scornet, Erwan. (2015). A Random Forest Guided Tour. TEST. 25. 10.1007/s11749-016-0481-7. <br>
+[[6]](https://www.jmlr.org/papers/volume15/delgado14a/delgado14a.pdf) Fernández-Delgado, M., et al. (2014). Do we need hundreds of classifiers to solve real world classification problems? JMLR, 15(1), 3133-3181 <br>
+[[7]](https://link.springer.com/article/10.1023/A:1010933404324) Breiman, L. (2001). Random forests. Machine Learning, 45(1), 5-32. <br>
 [[8]](https://www.sciencedirect.com/science/article/abs/pii/S0167865510000954?via%3Dihub)Genuer, R., et al. (2010). Variable selection using random forests. Pattern Recognition Letters, 31(14), 2225-2236. <br>
-[[9]](https://etd.umy.ac.id/id/eprint/115/)Kamila Sedah Kirana. (2020). Hubungan Antara Faktor Resiko Usia, Riwayat Keluarga, dan Usia Menarkhe Terhadap Kejadian Polycystic Ovarian Syndrome (PCOS). S1 thesism, Universitas Muhammadiyah Yogyakarta.
+[[9]](https://etd.umy.ac.id/id/eprint/115/) Kamila Sedah Kirana. (2020). Hubungan Antara Faktor Resiko Usia, Riwayat Keluarga, dan Usia Menarkhe Terhadap Kejadian Polycystic Ovarian Syndrome (PCOS). S1 thesism, Universitas Muhammadiyah Yogyakarta.
