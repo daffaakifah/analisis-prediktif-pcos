@@ -60,12 +60,12 @@ Korelasi tertinggi dengan Menstrual_Irregularity (0.47) dan BMI (0.38), diikuti 
 ## Data Preparation
 Teknik yang digunakan dalam penyiapan data *(Data Preparation)* yaitu:
 - **Split Data** merupakan proses untuk membagi antara data latih dan data uji. Split data adalah salah satu dari beberapa aspek yang  mempengaruhi seberapa baik kinerja model klasifikasi pada algoritma [[5]](https://jsi.politala.ac.id/index.php/JSI/article/view/622).
-Pada dataset ini secara acak dibagi menjadi dua subset: latih (80%) dan uji (20%) dengan kode berikut: <br>
+Pada dataset ini secara acak dibagi menjadi dua subset yaitu data latih (80%) dan data uji (20%) dengan kode sebagai berikut: <br>
 ```sh
 # Split dataset
 X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 ```
-- **Scaling Fitur** merupakan  cara  untuk  membuat numberical  datapada  dataset  memiliki rentang  nilai  yang  sama.  Dengan  artian  tidak ada satu pun variabel data yang mendominasi variabel data lainnya [[6]](https://openlibrarypublications.telkomuniversity.ac.id/index.php/engineering/article/view/14710). 
+- **Scaling Fitur** adalah teknik standarisasi yang menyamakan rentang nilai data numerik dalam dataset, sehingga semua variabel memiliki skala yang seimbang tanpa dominasi satu variabel terhadap lainnya. [[6]](https://openlibrarypublications.telkomuniversity.ac.id/index.php/engineering/article/view/14710). 
 
 ## Modeling
 Pada tahap modeling ini dibuat beberapa model dengan algoritma yang berbeda-beda. Pada proyek ini dataset dilatih dengan 4 model, yaitu menggunakan Logistic Regression, Decision Tree, Random Forest, dan Support Vector Machine. Berikut masing-masing penjelasannya:
@@ -136,11 +136,11 @@ Berikut merupakan hasil metriks akurasi dalam bentuk diagram batang:
 
 <br>
 Hasil akurasi Random Forest (RF) dan Decision Tree (DT) yang tidak jauh berbeda dapat terjadi karena beberapa alasan: <br>
-1. Jika dataset memiliki sedikit fitur atau pola yang mudah dipelajari, DT tunggal mungkin sudah mencapai performa maksimal. RF (yang terdiri dari banyak DT) tidak selalu meningkatkan akurasi dalam kasus ini [10].
+1. Jika dataset memiliki sedikit fitur atau pola yang mudah dipelajari, DT tunggal mungkin sudah mencapai performa maksimal. RF (yang terdiri dari banyak DT) tidak selalu meningkatkan akurasi dalam kasus ini [10]. <br>
 2. Ketidakseimbangan Kelas (Class Imbalance).
 Jika dataset sangat tidak seimbang, metrik akurasi bisa menyesatkan. RF dan DT mungkin sama-sama memprediksi kelas mayoritas dengan baik tetapi gagal menangkap minoritas [11] <br>
-
-Dari paparan sebelumnya dapat diketahui bahwa model dengan algoritma Decision Tree memiliki kinerja yang lebih baik. Untuk itu model tersebut yang akan dipilih untuk digunakan.
+<br>
+Dari paparan di atas dapat diketahui bahwa model dengan algoritma Decision Tree memiliki kinerja yang lebih baik. Untuk itu model tersebut yang akan dipilih untuk digunakan.
 
 ## Saran:
 - Menambahkan lagi dataset dengan rentang usia beragam agar mengetahui pengaruh usia terhadap PCOS [[12]](https://etd.umy.ac.id/id/eprint/115/).
