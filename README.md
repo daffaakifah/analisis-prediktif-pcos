@@ -39,7 +39,7 @@ Dataset tersebut tidak memiliki baik missing value maupun data yang duplikat.
 <br>
 Berikut merupakan matriks korelasi antar fitur:
 
-![matriks_korelasi_pcos](https://drive.google.com/file/d/1YQ5wcS9vR_oScZLklgFHnwI44jHnakfM/view?usp=sharing)
+![matriks_korelasi_pcos](https://github.com/daffaakifah/analisis-prediktif-pcos/blob/main/matriks%20korelasi%20pcos.png)
 
 Berdasarkan matriks korelasi dan visualisasi yang diberikan, berikut adalah deskripsi hubungan antara fitur-fitur yang terkait dengan PCOS (Polycystic Ovary Syndrome):
 1. Age (Usia): <br>
