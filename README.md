@@ -96,6 +96,7 @@ Classification Report:
    macro avg       0.99      0.97      0.98       200
 weighted avg       0.99      0.99      0.99       200
 ```
+
 <br>
 Interpretasi hasil:
 - Recall Lebih Baik untuk Kelas Minoritas (Kelas 1):
