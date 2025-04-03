@@ -1,5 +1,5 @@
 # ANALISIS PREDIKTIF PCOS (Polycystic Ovarian syndrome) - LAPORAN PROYEK MACHINE LEARNING TERAPAN 
-
+Oleh Daffa Akifah Balqis
 ## Domain Proyek 
 PCOS atau atau Sindrom Ovarium Polikistik merupakan kelainan hormonal yang dialami oleh sekitar 13% wanita dalam usia reproduksi. Gejalanya mencakup masalah metabolik, psikologis, dan reproduksi, seperti kadar hormon androgen yang tinggi, siklus haid tidak teratur, gangguan ovulasi, serta kesulitan memiliki anak [[1]](https://jurnal.upertis.ac.id/index.php/JKP/article/view/971/436). Deteksi dini PCOS sangat penting karena dapat membantu wanita untuk mendapatkan pengobatan yang tepat dan mencegah komplikasi jangka panjang. Analisis ini bertujuan untuk mengetahui faktor-faktor yang berpengaruh terhadap PCOS dan mengetahui algoritma machine learning yang dapat membantu dalam memprediksi PCOS. 
 
