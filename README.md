@@ -80,7 +80,7 @@ Perumusannya antara lain [[2]](https://locus.rivierapublishing.id/index.php/jl/a
 - C. Recall : mengukur pecahan kasus yang terjadi dan diprediksi tepat oleh AI. Rumus → (TP)/(TP+FN)
   
 <br>
-Keterangan [[3]](https://jurnal.tau.ac.id/index.php/siskom-kb/article/view/173): 
+Keterangan [3](https://jurnal.tau.ac.id/index.php/siskom-kb/article/view/173/123):
 <br>
 - TP : True Positive (TP), yaitu data  positif  yang terprediksi benar. <br>
 - TN : True Negative (TN), yaitu data negatif yang terprediksi dengan benar <br>
