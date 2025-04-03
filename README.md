@@ -80,10 +80,10 @@ Perumusannya antara lain [[2]](https://locus.rivierapublishing.id/index.php/jl/a
 - C. Recall : mengukur pecahan kasus yang terjadi dan diprediksi tepat oleh AI. Rumus → (TP)/(TP+FN)
   
 <br>
-Keterangan [[3]](https://jurnal.tau.ac.id/index.php/siskom-kb/article/view/173):
-- TP : True Positive (TP), yaitu data  positif  yang terprediksi benar.
-- TN : True Negative (TN), yaitu data negatif yang terprediksi dengan benar
-- FP : False Positive (FP),  yaitu data  negatif tapi terprediksi sebagai data positif.
+Keterangan [[3]](https://jurnal.tau.ac.id/index.php/siskom-kb/article/view/173): <br>
+- TP : True Positive (TP), yaitu data  positif  yang terprediksi benar. <br>
+- TN : True Negative (TN), yaitu data negatif yang terprediksi dengan benar <br>
+- FP : False Positive (FP),  yaitu data  negatif tapi terprediksi sebagai data positif. <br>
 - FN : False Negative (FN), yaitu data positif yang terprediksi sebagai data negatif.
 <br>
 
@@ -143,14 +143,14 @@ Dari paparan sebelumnya dapat diketahui bahwa model dengan algoritma Decision Tr
 
 ## Referensi:
 [[1]](https://jurnal.upertis.ac.id/index.php/JKP/article/view/971/436) Kurniawati, E., Hutabarat, N., & Noviasari, E. (2023). Status Gizi dan Gaya Hidup Wanita dengan Sindrom Ovarium Polikistik (PCOS) di Yogyakarta. JURNAL KESEHATAN PERINTIS, 10(1), 74-82. https://doi.org/10.33653/jkp.v10i1.971 <br>
-[[2]](https://locus.rivierapublishing.id/index.php/jl/article/view/135) F. Azimah dan K. R. N. Wardani, "Klasifikasi deteksi gejala awal COVID-19 dengan metodologi logistic regression, random forest classifier dan support vector machine," Locus: Penelitian & Pengabdian, vol. 1, no. 6, Sep. 2022. [Online]. Tersedia: https://locus.rivierapublishing.id/index.php/jl doi: 10.36418/locus.v1i6.135405.
-[[3]](https://jurnal.tau.ac.id/index.php/siskom-kb/article/view/173) Hana, F. M. (2020). Klasifikasi penderita penyakit diabetes menggunakan algoritma Decision Tree C4.5. Jurnal Sistem Komputer dan Kecerdasan Buatan, 4(1).
+[[2]](https://locus.rivierapublishing.id/index.php/jl/article/view/135) F. Azimah dan K. R. N. Wardani, "Klasifikasi deteksi gejala awal COVID-19 dengan metodologi logistic regression, random forest classifier dan support vector machine," Locus: Penelitian & Pengabdian, vol. 1, no. 6, Sep. 2022. [Online]. Tersedia: https://locus.rivierapublishing.id/index.php/jl doi: 10.36418/locus.v1i6.135405. <br>
+[[3]](https://jurnal.tau.ac.id/index.php/siskom-kb/article/view/173) Hana, F. M. (2020). Klasifikasi penderita penyakit diabetes menggunakan algoritma Decision Tree C4.5. Jurnal Sistem Komputer dan Kecerdasan Buatan, 4(1). <br>
 [[4]](https://journal.unpacti.ac.id/index.php/pjphsr/article/view/1727) Noviyanti, N., Johan, R., & Ruqaiyah, R. (2024). The Effect of Menstrual Cycle and Body Mass Index on The Risk of Polycystic Ovarian Syndrome (PCOS) in Adolescent Females in Tarakan City. ancasakti ournal f ublic ealth cience nd esearch, 4(3), 89-96. https://doi.org/10.47650/pjphsr.v4i3.1727 <br>
 [[5]](https://www.frontiersin.org/journals/reproductive-health/articles/10.3389/frph.2024.1475132/full) Bushell, A., & Crespi, B. J. (2024). The evolutionary basis of elevated testosterone in women with polycystic ovary syndrome: An overview of systematic reviews of the evidence. Frontiers in Reproductive Health, 6, Article 1475132. https://doi.org/10.3389/frph.2024.1475132 <br>
 [[6]](https://oaj.jurnalhst.com/index.php/jim/article/view/4513) Alamsyah, F., Halim, B., & Tanjung, T. (2024). Kadar serum anti-mullerian hormon sebagai alternatif pemeriksaan jumlah folikel antral dalam menegakkan diagnosa polycystic ovarian syndrome. Jurnal Ilmiah Multidisipliner (JIM), 8(9), 174.<br>
-[[7]](https://jsi.politala.ac.id/index.php/JSI/article/view/622) Oktafiani, R., Hermawan, A., & Avianto, D. (2023). Pengaruh komposisi split data terhadap performa klasifikasi penyakit kanker payudara menggunakan algoritma machine learning. Jurnal Sains dan Informatika, 9(1), 19. https://doi.org/10.34128/jsi.v9i1.622
-[[8]](https://openlibrarypublications.telkomuniversity.ac.id/index.php/engineering/article/view/14710) Aryuni, A. F., Putrada, A. G., & Abdurohman, M. (2021). Klasifikasi penumpang naik dan turun dengan sensor load cell menggunakan ekstraksi fitur dan support vector machine. e-Proceeding of Engineering, 8(2), 3197.
-[[9]](https://jurnal.umt.ac.id/index.php/jt/article/viewFile/9099/4575) Fadli, M., & Saputra, R. A. (2023). Klasifikasi dan evaluasi performa model Random Forest untuk prediksi stroke [Classification and evaluation of performance models Random Forest for stroke prediction]. Jurnal Teknik, 15(2), 45–60. http://jurnal.umt.ac.id/index.php/jt/index
+[[7]](https://jsi.politala.ac.id/index.php/JSI/article/view/622) Oktafiani, R., Hermawan, A., & Avianto, D. (2023). Pengaruh komposisi split data terhadap performa klasifikasi penyakit kanker payudara menggunakan algoritma machine learning. Jurnal Sains dan Informatika, 9(1), 19. https://doi.org/10.34128/jsi.v9i1.622 <br>
+[[8]](https://openlibrarypublications.telkomuniversity.ac.id/index.php/engineering/article/view/14710) Aryuni, A. F., Putrada, A. G., & Abdurohman, M. (2021). Klasifikasi penumpang naik dan turun dengan sensor load cell menggunakan ekstraksi fitur dan support vector machine. e-Proceeding of Engineering, 8(2), 3197. <br>
+[[9]](https://jurnal.umt.ac.id/index.php/jt/article/viewFile/9099/4575) Fadli, M., & Saputra, R. A. (2023). Klasifikasi dan evaluasi performa model Random Forest untuk prediksi stroke [Classification and evaluation of performance models Random Forest for stroke prediction]. Jurnal Teknik, 15(2), 45–60. http://jurnal.umt.ac.id/index.php/jt/index <br>
 [[10]](https://www.researchgate.net/publication/284219299_A_Random_Forest_Guided_Tour) Biau, Gérard & Scornet, Erwan. (2015). A Random Forest Guided Tour. TEST. 25. 10.1007/s11749-016-0481-7. <br>
 [[11]](https://www.jmlr.org/papers/volume15/delgado14a/delgado14a.pdf) Fernández-Delgado, M., et al. (2014). Do we need hundreds of classifiers to solve real world classification problems? JMLR, 15(1), 3133-3181 <br>
 [[12]](https://etd.umy.ac.id/id/eprint/115/) Kamila Sedah Kirana. (2020). Hubungan Antara Faktor Resiko Usia, Riwayat Keluarga, dan Usia Menarkhe Terhadap Kejadian Polycystic Ovarian Syndrome (PCOS). S1 thesism, Universitas Muhammadiyah Yogyakarta.
