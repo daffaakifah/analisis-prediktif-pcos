@@ -187,6 +187,17 @@ Keterangan [8]:
 <br>
 
 #### Hasil evaluasi metrik:
+Berikut merupakan hasil metriks akurasi dalam bentuk diagram batang:
+
+![image](https://github.com/user-attachments/assets/0b0fff64-292f-4dea-a4a3-329f1998f8ba)
+
+<br>
+Hasil akurasi Random Forest (RF) dan Decision Tree (DT) yang tidak jauh berbeda dapat terjadi karena beberapa alasan: <br>
+1. Jika dataset memiliki sedikit fitur atau pola yang mudah dipelajari, DT tunggal mungkin sudah mencapai performa maksimal. RF (yang terdiri dari banyak DT) tidak selalu meningkatkan akurasi dalam kasus ini [10]. <br>
+2. Ketidakseimbangan Kelas (Class Imbalance).
+Jika dataset sangat tidak seimbang, metrik akurasi bisa menyesatkan. RF dan DT mungkin sama-sama memprediksi kelas mayoritas dengan baik tetapi gagal menangkap minoritas [11] <br>
+<br>
+
 Berikut adalah metrik evaluasi untuk 2 model dengan akurasi tertinggi:
 ```sh
 Decision Tree:
@@ -225,20 +236,19 @@ Interpretasi hasil: <br>
 - Kesederhanaan Model: DT lebih mudah diinterpretasi (visualisasi pohon) dan lebih cepat dalam prediksi dibanding RF yang kompleks.
 <br>
 
-<br>
-Berikut merupakan hasil metriks akurasi dalam bentuk diagram batang:
+Visualisasi prediksi dan hasil dengan Confusion matrix: <br>
+![image](https://github.com/user-attachments/assets/552d51a7-0856-4546-aec9-a03ffc9144ff)
 
-![image](https://github.com/user-attachments/assets/0b0fff64-292f-4dea-a4a3-329f1998f8ba)
+Terdapat satu kesalahan yang diprediksi oleh model Decision Tree, yaitu false negative, satu data yang aslinya menderita tetapi PCOS diprediksi Non-PCOS oleh model.
+<br>
 
-<br>
-Hasil akurasi Random Forest (RF) dan Decision Tree (DT) yang tidak jauh berbeda dapat terjadi karena beberapa alasan: <br>
-1. Jika dataset memiliki sedikit fitur atau pola yang mudah dipelajari, DT tunggal mungkin sudah mencapai performa maksimal. RF (yang terdiri dari banyak DT) tidak selalu meningkatkan akurasi dalam kasus ini [10]. <br>
-2. Ketidakseimbangan Kelas (Class Imbalance).
-Jika dataset sangat tidak seimbang, metrik akurasi bisa menyesatkan. RF dan DT mungkin sama-sama memprediksi kelas mayoritas dengan baik tetapi gagal menangkap minoritas [11] <br>
-<br>
+![image](https://github.com/user-attachments/assets/2f1491a1-a94d-46c2-b8cf-fb0763f4d8d4)
+
+Terdapat dua kesalahan yang diprediksi oleh model Random Forest, yaitu false negative, dua data yang aslinya menderita tetapi PCOS diprediksi Non-PCOS oleh model.
 
 #### Model pilihan
-Dari paparan di atas dapat diketahui bahwa model dengan algoritma Decision Tree memiliki kinerja yang terbaik. Untuk itu model tersebut yang akan dipilih untuk digunakan.
+Dari paparan di atas dapat diketahui bahwa model dengan algoritma Decision Tree memiliki kinerja yang terbaik. Untuk itu model tersebut yang akan dipilih untuk digunakan. <br>
+![image](https://github.com/user-attachments/assets/69ef074f-36a8-4ed6-86f6-f52aff73c52b)
 
 #### Evaluasi Terhadap Business Understanding
 Menjawab Problem Statement: Model yang dibuat berhasil menjawab problem statement dengan memprediksi harga sewa apartemen berdasarkan fitur-fitur yang ada dan mengidentifikasi fitur-fitur yang paling berpengaruh.
