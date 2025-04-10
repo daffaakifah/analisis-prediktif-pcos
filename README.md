@@ -31,14 +31,14 @@ Upaya yang dilakukan untuk mencapai tujuan tersebut antara lain:
 ## Data Understanding
 #### Penjelasan singkat mengenai dataset
 Dataset yang digunakan digunakan dalam laporan ini bersumber dari kaggle serta memiliki 1000 baris dan 6 kolom, 5 kolom sebagai fitur dan 1 kolom sebagai variabel target. Berikut penjelasan kolom dataset dari sumber yang dapat dilihat di [dataset pcos](https://www.kaggle.com/datasets/samikshadalvi/pcos-diagnosis-dataset):
- #   Column                     Non-Null Count  Dtype  
----  ------                     --------------  -----  
- 0   Age                        1000 non-null   int64  
- 1   BMI                        1000 non-null   float64
- 2   Menstrual_Irregularity     1000 non-null   int64  
- 3   Testosterone_Level(ng/dL)  1000 non-null   float64
- 4   Antral_Follicle_Count      1000 non-null   int64  
- 5   PCOS_Diagnosis             1000 non-null   int64 
+| Column                        | Non-Null Count | Dtype   |
+|-------------------------------|----------------|---------|
+| Age                           | 1000 non-null  | int64   |
+| BMI                           | 1000 non-null  | float64 |
+| Menstrual_Irregularity        | 1000 non-null  | int64   |
+| Testosterone_Level (ng/dL)    | 1000 non-null  | float64 |
+| Antral_Follicle_Count         | 1000 non-null  | int64   |
+| PCOS_Diagnosis                | 1000 non-null  | int64   |
 - Fitur:
   1. Usia (tahun): Usia pasien, berkisar antara 18 hingga 45 tahun. Tipe data integer.
   2. BMI (kg/m²): Indeks Massa Tubuh, pengukur lemak tubuh berdasarkan tinggi dan berat badan, dengan rentang 18 hingga 35. Tipe data float.
@@ -57,7 +57,7 @@ Dataset tidak memiliki fitur yang terdapat duplikat data:
 
 Dataset tersebut tidak memiliki baik missing value maupun data yang duplikat.
 <br>
-### Exploratory Data Analysis (EDA)
+#### Exploratory Data Analysis (EDA)
 - Melihat persebaran data diagnosis:
   ![image](https://github.com/user-attachments/assets/3a7fe4cf-f823-4bc3-b50d-59c08b577c9e)
   Persebaran diagnosis data didominasi oleh pasien yang tidak mengidap PCOS yaitu total 80.1% dari total keseluruhan data yang ada pada dataset.
@@ -133,22 +133,22 @@ models = {
 }
 ```
 Keseluruhan algoritma yang dipakai menggunakan paramater default:
-- Parameter default untuk Logistic Regression:
-  penalty='l2': Jenis regularisasi.
-  C=1.0: Tingkat inversi regularisasi (semakin kecil, semakin kuat regularisasinya).
-  solver='lbfgs': Metode optimizer yang digunakan.
-- Parameter default untuk Decision Tree:
-  criterion='gini': Kriteria pemisahan.
-  max_depth=None: Batas kedalaman maksimum pohon.
-  min_samples_split=2: Jumlah sampel minimum untuk membagi node.
-- Parameter default untuk Random Forest:
-  n_estimators=100: Jumlah pohon dalam ensemble.
-  criterion='gini': Kriteria pemisahan node.
-  max_depth=None: Batas kedalaman maksimum pohon.
-- Parameter default untuk SVC:
-  kernel='rbf': Jenis kernel yang digunakan (Radial Basis Function).
-  C=1.0: Tingkat inversi regularisasi.
-  gamma='scale': Parameter kernel yang otomatis dihitung berdasarkan data.
+- Parameter default untuk Logistic Regression: <br>
+  penalty='l2': Jenis regularisasi. <br>
+  C=1.0: Tingkat inversi regularisasi (semakin kecil, semakin kuat regularisasinya). <br>
+  solver='lbfgs': Metode optimizer yang digunakan. <br>
+- Parameter default untuk Decision Tree: <br>
+  criterion='gini': Kriteria pemisahan. <br>
+  max_depth=None: Batas kedalaman maksimum pohon. <br>
+  min_samples_split=2: Jumlah sampel minimum untuk membagi node. <br>
+- Parameter default untuk Random Forest: <br>
+  n_estimators=100: Jumlah pohon dalam ensemble. <br>
+  criterion='gini': Kriteria pemisahan node. <br>
+  max_depth=None: Batas kedalaman maksimum pohon. <br>
+- Parameter default untuk SVC: <br>
+  kernel='rbf': Jenis kernel yang digunakan (Radial Basis Function). <br>
+  C=1.0: Tingkat inversi regularisasi. <br>
+  gamma='scale': Parameter kernel yang otomatis dihitung berdasarkan data. <br>
 
 #### Training dan evaluasi model:
 ```sh
@@ -183,6 +183,7 @@ Keterangan [8]:
 - FN : False Negative (FN), yaitu data positif yang terprediksi sebagai data negatif.
 <br>
 
+#### Hasil evaluasi metrik:
 Berikut adalah metrik evaluasi untuk 2 model dengan akurasi tertinggi:
 ```sh
 Decision Tree:
@@ -232,7 +233,8 @@ Hasil akurasi Random Forest (RF) dan Decision Tree (DT) yang tidak jauh berbeda 
 2. Ketidakseimbangan Kelas (Class Imbalance).
 Jika dataset sangat tidak seimbang, metrik akurasi bisa menyesatkan. RF dan DT mungkin sama-sama memprediksi kelas mayoritas dengan baik tetapi gagal menangkap minoritas [11] <br>
 <br>
-Dari paparan di atas dapat diketahui bahwa model dengan algoritma Decision Tree memiliki kinerja yang lebih baik. Untuk itu model tersebut yang akan dipilih untuk digunakan.
+#### Model pilihan
+Dari paparan di atas dapat diketahui bahwa model dengan algoritma Decision Tree memiliki kinerja yang terbaik. Untuk itu model tersebut yang akan dipilih untuk digunakan.
 
 #### Evaluasi Terhadap Business Understanding
 Menjawab Problem Statement: Model yang dibuat berhasil menjawab problem statement dengan memprediksi harga sewa apartemen berdasarkan fitur-fitur yang ada dan mengidentifikasi fitur-fitur yang paling berpengaruh.
