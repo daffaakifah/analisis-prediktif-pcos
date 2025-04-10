@@ -262,17 +262,18 @@ Pohon keputusan (Decision Tree) yang digunakan ini mampu memprediksi data dengan
 
 - Mencapai Goals
   <br>
-  Model Random Forest berhasil mencapai tujuan untuk memberikan prediksi PCOS yang akurat. Dengan evaluasi menggunakan metrik seperti 
-  akurasi, precision, recall, dan F1-score, Random Forest menunjukkan performa terbaik dibandingkan model lainnya.
+  Model Decision Tree berhasil mencapai tujuan untuk memberikan prediksi PCOS yang akurat. Dengan evaluasi menggunakan metrik seperti 
+  akurasi, precision, recall, dan F1-score, Decision Tree menunjukkan performa terbaik dibandingkan model lainnya untuk emprediksi PCOS 
+  dengan akurat.
   
 - Dampak dari Solution Statement
   <br>
-  Penggunaan beberapa algoritma machine learning memberikan dampak positif dengan meningkatkan akurasi prediksi dan memungkinkan
+  Penggunaan beberapa algoritma machine learning memberikan dampak positif dengan metrik prediksi dan memungkinkan
   pemilihan model terbaik. Solusi yang direncanakan memberikan hasil yang signifikan dalam mencapai tujuan proyek, yaitu:
-  - Efisiensi Diagnosis: Model machine learning diharapkan dapat membantu mempercepat proses diagnosis PCOS sehingga dapat dilakukan 
-    pemeriksaan lanjutan dan tindakan dengan cepat.
-  - Akurasi Tinggi: Model Random Forest dengan akurasi 99.5% menunjukkan bahwa solusi ini dapat menjadi alat bantu dalam mengidentifikasi
-    risiko PCOS pada pasien lebih cepat dan tepat waktu.
+  - Efisiensi Diagnosis: Model machine learning Decision Tree diharapkan dapat membantu mempercepat proses diagnosis PCOS sehingga dapat 
+    dilakukan pemeriksaan lanjutan dan tindakan dengan cepat.
+  - Akurasi Tinggi: Model Decision Tree dengan akurasi 99.5% menunjukkan bahwa solusi ini yang diharapkan dapat menjadi alat bantu dalam 
+    mengidentifikasi risiko PCOS pada pasien lebih cepat dan tepat waktu.
 
 #### Saran:
 - Menambahkan lagi dataset dengan rentang usia beragam agar mengetahui pengaruh usia terhadap PCOS [[12]](https://etd.umy.ac.id/id/eprint/115/).
