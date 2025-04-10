@@ -6,14 +6,14 @@ PCOS atau atau Sindrom Ovarium Polikistik merupakan kelainan hormonal yang diala
 ## Business Understanding
 
 ### Problem Statements
-Diagnosis PCOS saat ini masih bergantung pada tes medis yang kompleks, seperti USG panggul dan pemeriksaan hormon, yang membutuhkan waktu lama dan biaya tinggi. Selain itu, keterbatasan akses ke fasilitas medis di daerah terpencil membuat banyak pasien tidak mendapatkan diagnosis tepat waktu. Meningkatkan dan membantu deteksi dini dan pengobatan tepat waktu untuk Sindrom Ovarium Polikistik (PCOS) sebagai upaya untuk mengatasi PCOS bagi wanita dapat dilakukan dengan membangun sistem machine learning yang mampu memprediksi dengan akurat hasil diagnosis PCOS. Berdasarkan latar belakang di atas, berikut ini merupakan rumusan masalah yang dapat diselesaikan pada proyek ini:
+Diagnosis Sindrom Ovarium Polikistik (PCOS) saat ini masih bergantung pada tes medis yang kompleks, seperti USG panggul dan pemeriksaan hormon, yang membutuhkan waktu lama dan biaya tinggi. Selain itu, keterbatasan akses ke fasilitas medis di daerah terpencil membuat banyak pasien tidak mendapatkan diagnosis tepat waktu. Meningkatkan deteksi dini dan pengobatan tepat waktu untuk PCOS sangat penting agar pemeriksaan dan tindakan lanjutan dapat dilakukan secara efektif. Berdasarkan latar belakang tersebut, berikut ini merupakan rumusan masalah yang akan diselesaikan dalam proyek ini:
 1. Bagaimana cara memprediksi atau mendiagnosis PCOS dengan akurat menggunakan model machine learning?
-2. Model apa yang memiliki akurasi yang paling baik dalam memprediksi PCOS sehingga dengan akurat mendiagnosis PCOS berdasarkan faktor-faktor yang diberikan?
+2. Model apa yang memiliki akurasi tertinggi dalam memprediksi PCOS berdasarkan faktor-faktor yang relevan?
 
 ### Goals
 Tujuan dari proyek ini adalah:
-1.	Mengembangkan model machine learning yang akurat untuk mendiagnosis PCOS.
-2. Membandingkan beberapa algoritma model sehingga ditemukan akurasi yang paling baik untuk memprediksikan PCOS.
+1. Mengembangkan model machine learning yang akurat untuk mendiagnosis PCOS.
+2. Membandingkan beberapa algoritma model sehingga ditemukan akurasi yang paling baik untuk memprediksi PCOS.
 
 ### Solution Statements
 Upaya yang dilakukan untuk mencapai tujuan tersebut antara lain:
