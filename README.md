@@ -135,7 +135,7 @@ models = {
     'SVM': SVC()
 }
 ```
-Keseluruhan algoritma yang dipakai menggunakan paramater default:
+Keseluruhan algoritma yang dipakai menggunakan paramater default yang beberapanya berupa:
 - Parameter default untuk Logistic Regression: <br>
   penalty='l2': Jenis regularisasi. <br>
   C=1.0: Tingkat inversi regularisasi (semakin kecil, semakin kuat regularisasinya). <br>
