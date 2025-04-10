@@ -71,7 +71,7 @@ Dataset tersebut tidak memiliki baik missing value maupun data yang duplikat.
   - Distribusi BMI untuk pengidap PCOS cenderung tinggi
   - Distribusi testosteron level untuk pengidap PCOS cenderung tinggi
   - Distribusi Antral Follicle untuk pengidap PCOS cenderung tinggi
-- Melihat persentase varuabel dengan pie chart:
+- Melihat distribusi variabel ketidakteraturan menstruasi dengan pie chart: <br>
   ![image](https://github.com/user-attachments/assets/384636bc-a57b-4016-a334-a2ee9e1dad68)
   Sebanyak 53% pengidap PCOS dari dataset mengalami ketidakteraturan dalam menstruasi.
 - Melihat distribusi fitur dengan boxplot:
