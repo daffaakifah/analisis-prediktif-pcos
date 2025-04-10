@@ -236,7 +236,7 @@ Interpretasi hasil: <br>
 - Kesederhanaan Model: DT lebih mudah diinterpretasi (visualisasi pohon) dan lebih cepat dalam prediksi dibanding RF yang kompleks.
 <br>
 
-Visualisasi prediksi dan hasil dengan Confusion matrix: <br>
+#### Visualisasi prediksi dan hasil dengan Confusion matrix: <br>
 ![image](https://github.com/user-attachments/assets/552d51a7-0856-4546-aec9-a03ffc9144ff)
 
 Terdapat satu kesalahan yang diprediksi oleh model Decision Tree, yaitu false negative, satu data yang aslinya menderita tetapi PCOS diprediksi Non-PCOS oleh model.
@@ -250,10 +250,26 @@ Terdapat dua kesalahan yang diprediksi oleh model Random Forest, yaitu false neg
 Dari paparan di atas dapat diketahui bahwa model dengan algoritma Decision Tree memiliki kinerja yang terbaik. Untuk itu model tersebut yang akan dipilih untuk digunakan. <br>
 ![image](https://github.com/user-attachments/assets/69ef074f-36a8-4ed6-86f6-f52aff73c52b)
 
+Pohon keputusan (Decision Tree) yang digunakan ini mampu memprediksi data dengan akurasi 99.5%, sehingga diharapkan dapat membantu deteksi dini PCOS sehingga mempercepat proses diagnosis awal penyakit. Dengan kemampuan pohon keputusan dalam menghasilkan prediksi yang presisi, model ini diharapkan dapat menjadi alat bantu yang efektif untuk mendeteksi risiko PCOS pada pasien lebih cepat dan tepat.
+
 #### Evaluasi Terhadap Business Understanding
-Menjawab Problem Statement: Model yang dibuat berhasil menjawab problem statement dengan memprediksi harga sewa apartemen berdasarkan fitur-fitur yang ada dan mengidentifikasi fitur-fitur yang paling berpengaruh.
-Mencapai Goals: Model Random Forest dengan hyperparameter yang dioptimalkan berhasil mencapai tujuan untuk memberikan prediksi harga sewa yang akurat dan mengidentifikasi fitur penting.
-Dampak dari Solution Statement: Penggunaan beberapa algoritma dan hyperparameter tuning memberikan dampak positif dengan meningkatkan akurasi prediksi dan memungkinkan pemilihan model terbaik. Solusi yang direncanakan memberikan hasil yang signifikan dalam mencapai tujuan proyek.
+- Menjawab Problem Statement
+  Model yang dibuat berhasil menjawab problem statement dengan memprediksi risiko PCOS secara akurat berdasarkan faktor-faktor yang 
+  relevan, seperti usia, indeks massa tubuh (BMI), dan faktor-faktor lainnya. Pohon keputusan (Decision Tree) yang digunakan mampu 
+  memprediksi data dengan akurasi 99.5%, sehingga diharapkan dapat membantu deteksi dini PCOS dan mempercepat proses diagnosis awal 
+  penyakit.
+
+- Mencapai Goals
+  Model Random Forest berhasil mencapai tujuan untuk memberikan prediksi PCOS yang akurat. Dengan evaluasi menggunakan metrik seperti 
+  akurasi, precision, recall, dan F1-score, Random Forest menunjukkan performa terbaik dibandingkan model lainnya.
+  
+- Dampak dari Solution Statement
+  Penggunaan beberapa algoritma machine learning memberikan dampak positif dengan meningkatkan akurasi prediksi dan memungkinkan
+  pemilihan model terbaik. Solusi yang direncanakan memberikan hasil yang signifikan dalam mencapai tujuan proyek, yaitu:
+  - Efisiensi Diagnosis: Model machine learning diharapkan dapat membantu mempercepat proses diagnosis PCOS sehingga dapat dilakukan 
+    pemeriksaan dan tindakan dengan cepat.
+  - Akurasi Tinggi: Model Random Forest dengan akurasi 99.5% menunjukkan bahwa solusi ini dapat menjadi alat bantu dalam mengidentifikasi
+    risiko PCOS pada pasien lebih cepat dan tepat waktu.
 
 #### Saran:
 - Menambahkan lagi dataset dengan rentang usia beragam agar mengetahui pengaruh usia terhadap PCOS [[12]](https://etd.umy.ac.id/id/eprint/115/).
