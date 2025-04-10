@@ -48,9 +48,9 @@ Dataset yang digunakan digunakan dalam laporan ini bersumber dari kaggle serta m
 - Variabel Target:
   1. Diagnosis PCOS (biner): Indikator biner apakah pasien terdiagnosis PCOS (0 = Tidak, 1 = Ya), berdasarkan kombinasi faktor risiko seperti IMT tinggi, kadar testosteron, ketidakteraturan menstruasi, dan jumlah folikel antral. Tipe data integer.
 <br>
+
 #### Mengecek missing value dan duplikat pada dataset
 Dataset tidak memiliki fitur yang terdapat misssing value:
-
 ![image](https://github.com/user-attachments/assets/92caacc9-474c-42d3-89e5-c6ce8153b5e3)
 
 Dataset tidak memiliki fitur yang terdapat duplikat data:
