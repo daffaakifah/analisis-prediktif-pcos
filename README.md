@@ -50,6 +50,7 @@ Dataset yang digunakan digunakan dalam laporan ini bersumber dari kaggle serta m
 <br>
 #### Mengecek missing value dan duplikat pada dataset
 Dataset tidak memiliki fitur yang terdapat misssing value:
+
 ![image](https://github.com/user-attachments/assets/92caacc9-474c-42d3-89e5-c6ce8153b5e3)
 
 Dataset tidak memiliki fitur yang terdapat duplikat data:
