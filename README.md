@@ -253,17 +253,17 @@ Dari paparan di atas dapat diketahui bahwa model dengan algoritma Decision Tree 
 Pohon keputusan (Decision Tree) yang digunakan ini mampu memprediksi data dengan akurasi 99.5%, sehingga diharapkan dapat membantu deteksi dini PCOS sehingga mempercepat proses diagnosis awal penyakit. Dengan kemampuan pohon keputusan dalam menghasilkan prediksi yang presisi, model ini diharapkan dapat menjadi alat bantu yang efektif untuk mendeteksi risiko PCOS pada pasien lebih cepat dan tepat.
 
 #### Evaluasi Terhadap Business Understanding
-- Menjawab Problem Statement
+- Menjawab Problem Statement <br>
   Model yang dibuat berhasil menjawab problem statement dengan memprediksi risiko PCOS secara akurat berdasarkan faktor-faktor yang 
   relevan, seperti usia, indeks massa tubuh (BMI), dan faktor-faktor lainnya. Pohon keputusan (Decision Tree) yang digunakan mampu 
   memprediksi data dengan akurasi 99.5%, sehingga diharapkan dapat membantu deteksi dini PCOS dan mempercepat proses diagnosis awal 
   penyakit.
 
-- Mencapai Goals
+- Mencapai Goals <br>
   Model Random Forest berhasil mencapai tujuan untuk memberikan prediksi PCOS yang akurat. Dengan evaluasi menggunakan metrik seperti 
   akurasi, precision, recall, dan F1-score, Random Forest menunjukkan performa terbaik dibandingkan model lainnya.
   
-- Dampak dari Solution Statement
+- Dampak dari Solution Statement <br>
   Penggunaan beberapa algoritma machine learning memberikan dampak positif dengan meningkatkan akurasi prediksi dan memungkinkan
   pemilihan model terbaik. Solusi yang direncanakan memberikan hasil yang signifikan dalam mencapai tujuan proyek, yaitu:
   - Efisiensi Diagnosis: Model machine learning diharapkan dapat membantu mempercepat proses diagnosis PCOS sehingga dapat dilakukan 
