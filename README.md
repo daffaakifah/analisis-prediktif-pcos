@@ -66,11 +66,12 @@ Dataset tersebut tidak memiliki baik missing value maupun data yang duplikat.
   
 - Melihat distribusi fitur dengan histogram:
   ![image](https://github.com/user-attachments/assets/85392997-cd50-47d6-b7f1-dabf80e2f2e9)
-  Interpretasi distribusi variabel feature terhadap target:
+  Interpretasi distribusi variabel fitur terhadap target:
   - Rentang usia tersebar dari usian 20an sampai 40an untuk pengidap PCOS
   - Distribusi BMI untuk pengidap PCOS cenderung tinggi
   - Distribusi testosteron level untuk pengidap PCOS cenderung tinggi
   - Distribusi Antral Follicle untuk pengidap PCOS cenderung tinggi
+- Melihat persentase varuabel dengan pie chart:
   ![image](https://github.com/user-attachments/assets/384636bc-a57b-4016-a334-a2ee9e1dad68)
   Sebanyak 53% pengidap PCOS dari dataset mengalami ketidakteraturan dalam menstruasi.
 - Melihat distribusi fitur dengan boxplot:
