@@ -59,8 +59,9 @@ Dataset tidak memiliki fitur yang terdapat duplikat data:
 Dataset tersebut tidak memiliki baik missing value maupun data yang duplikat.
 <br>
 #### Exploratory Data Analysis (EDA)
-- Melihat persebaran data diagnosis:
+- Melihat persebaran data diagnosis: <br>
   ![image](https://github.com/user-attachments/assets/3a7fe4cf-f823-4bc3-b50d-59c08b577c9e)
+  <br>
   Persebaran diagnosis data didominasi oleh pasien yang tidak mengidap PCOS yaitu total 80.1% dari total keseluruhan data yang ada pada dataset.
   
 - Melihat distribusi fitur dengan histogram:
