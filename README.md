@@ -98,10 +98,10 @@ Dataset tersebut tidak memiliki baik missing value maupun data yang duplikat.
   5. Antral Follicle Count (Jumlah Folikel Antral): <br>
      Memiliki korelasi positif dengan PCOS_Diagnosis (0.19). Jumlah folikel antral yang tinggi juga merupakan ciri khas faktor PCOS [[4]](https://oaj.jurnalhst.com/index.php/jim/article/view/4513).
 <br>
-  PCOS_Diagnosis: <br>
-  Korelasi tertinggi dengan Menstrual_Irregularity (0.47) dan BMI (0.38), diikuti oleh Testosterone_level (0.2) dan Antral_Follicle_Count 
-  (0.19). Ini menunjukkan bahwa ketidakteraturan menstruasi dan obesitas (BMI tinggi) adalah faktor dominan yang terkait dengan PCOS 
-  dalam dataset ini.
+    PCOS_Diagnosis: <br>
+    Korelasi tertinggi dengan Menstrual_Irregularity (0.47) dan BMI (0.38), diikuti oleh Testosterone_level (0.2) dan 
+    Antral_Follicle_Count (0.19). Ini menunjukkan bahwa ketidakteraturan menstruasi dan obesitas (BMI tinggi) adalah faktor dominan yang 
+    terkait dengan PCOS dalam dataset ini.
 
 ## Data Preparation
 Teknik yang digunakan dalam penyiapan data *(Data Preparation)* yaitu:
@@ -236,6 +236,7 @@ Hasil akurasi Random Forest (RF) dan Decision Tree (DT) yang tidak jauh berbeda 
 2. Ketidakseimbangan Kelas (Class Imbalance).
 Jika dataset sangat tidak seimbang, metrik akurasi bisa menyesatkan. RF dan DT mungkin sama-sama memprediksi kelas mayoritas dengan baik tetapi gagal menangkap minoritas [11] <br>
 <br>
+
 #### Model pilihan
 Dari paparan di atas dapat diketahui bahwa model dengan algoritma Decision Tree memiliki kinerja yang terbaik. Untuk itu model tersebut yang akan dipilih untuk digunakan.
 
