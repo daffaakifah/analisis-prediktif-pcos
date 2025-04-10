@@ -6,7 +6,7 @@ PCOS atau atau Sindrom Ovarium Polikistik merupakan kelainan hormonal yang diala
 ## Business Understanding
 
 ### Problem Statements
-Diagnosis Sindrom Ovarium Polikistik (PCOS) saat ini masih bergantung pada tes medis yang kompleks, seperti USG panggul dan pemeriksaan hormon, yang membutuhkan waktu lama dan biaya tinggi. Selain itu, keterbatasan akses ke fasilitas medis di daerah terpencil membuat banyak pasien tidak mendapatkan diagnosis tepat waktu. Meningkatkan deteksi dini dan pengobatan tepat waktu untuk PCOS sangat penting agar pemeriksaan dan tindakan lanjutan dapat dilakukan secara efektif. Berdasarkan latar belakang tersebut, berikut ini merupakan rumusan masalah yang akan diselesaikan dalam proyek ini:
+Diagnosis Sindrom Ovarium Polikistik (PCOS) saat ini masih bergantung pada tes medis yang kompleks, seperti USG dan pemeriksaan hormon, yang membutuhkan waktu lama dan biaya tinggi. Selain itu, keterbatasan akses ke fasilitas medis di daerah terpencil membuat banyak pasien tidak mendapatkan diagnosis tepat waktu. Meningkatkan deteksi dini dapat membantu untk pelaksanaan pengobatan tepat waktu untuk PCOS sehingga pemeriksaan dan tindakan lanjutan dapat dilakukan secara efektif. Berdasarkan latar belakang tersebut, berikut ini merupakan rumusan masalah yang akan diselesaikan dalam proyek ini:
 1. Bagaimana cara memprediksi atau mendiagnosis PCOS dengan akurat menggunakan model machine learning?
 2. Model apa yang memiliki akurasi tertinggi dalam memprediksi PCOS berdasarkan faktor-faktor yang relevan?
 
@@ -270,7 +270,7 @@ Pohon keputusan (Decision Tree) yang digunakan ini mampu memprediksi data dengan
   Penggunaan beberapa algoritma machine learning memberikan dampak positif dengan meningkatkan akurasi prediksi dan memungkinkan
   pemilihan model terbaik. Solusi yang direncanakan memberikan hasil yang signifikan dalam mencapai tujuan proyek, yaitu:
   - Efisiensi Diagnosis: Model machine learning diharapkan dapat membantu mempercepat proses diagnosis PCOS sehingga dapat dilakukan 
-    pemeriksaan dan tindakan dengan cepat.
+    pemeriksaan lanjutan dan tindakan dengan cepat.
   - Akurasi Tinggi: Model Random Forest dengan akurasi 99.5% menunjukkan bahwa solusi ini dapat menjadi alat bantu dalam mengidentifikasi
     risiko PCOS pada pasien lebih cepat dan tepat waktu.
 
