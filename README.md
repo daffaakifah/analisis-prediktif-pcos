@@ -12,7 +12,7 @@ Diagnosis Sindrom Ovarium Polikistik (PCOS) saat ini masih bergantung pada tes m
 
 ### Goals
 Tujuan dari proyek ini adalah:
-1. Mengembangkan model machine learning yang akurat untuk mendiagnosis PCOS.
+1. Mengembangkan model machine learning yang akurat untuk mendiagnosis PCOS sehingga dapat diprediksi dengan cepat, tepat, dan akurat.
 2. Membandingkan beberapa algoritma model sehingga ditemukan akurasi yang paling baik untuk memprediksi PCOS.
 
 ### Solution Statements
@@ -262,9 +262,9 @@ Pohon keputusan (Decision Tree) yang digunakan ini mampu memprediksi data dengan
 
 - Mencapai Goals
   <br>
-  Model Decision Tree berhasil mencapai tujuan untuk memberikan prediksi PCOS yang akurat. Dengan evaluasi menggunakan metrik seperti 
-  akurasi, precision, recall, dan F1-score, Decision Tree menunjukkan performa terbaik dibandingkan model lainnya untuk emprediksi PCOS 
-  dengan akurat.
+  Model Decision Tree berhasil mencapai tujuan untuk memberikan prediksi PCOS yang akurat. Dengan evaluasi perbandingan model menggunakan 
+  metrik seperti akurasi, precision, recall, dan F1-score, Decision Tree menunjukkan performa terbaik dalam memprediksi PCOS dibandingkan 
+  model lainnya.
   
 - Dampak dari Solution Statement
   <br>
@@ -272,8 +272,9 @@ Pohon keputusan (Decision Tree) yang digunakan ini mampu memprediksi data dengan
   pemilihan model terbaik. Solusi yang direncanakan memberikan hasil yang signifikan dalam mencapai tujuan proyek, yaitu:
   - Efisiensi Diagnosis: Model machine learning Decision Tree diharapkan dapat membantu mempercepat proses diagnosis PCOS sehingga dapat 
     dilakukan pemeriksaan lanjutan dan tindakan dengan cepat.
-  - Akurasi Tinggi: Model Decision Tree dengan akurasi 99.5% menunjukkan bahwa solusi ini yang diharapkan dapat menjadi alat bantu dalam 
-    mengidentifikasi risiko PCOS pada pasien lebih cepat dan tepat waktu.
+  - Akurasi Tinggi: Dengan evaluasi menggunakan metrik seperti akurasi, precision, recall, dan F1-score, Decision Tree menjadi model yang 
+    menunjukkan prediksi dengan akurat. Solusi ini yang diharapkan dapat menjadi alat bantu dalam mengidentifikasi risiko PCOS pada 
+    pasien lebih cepat dan tepat.
 
 #### Saran:
 - Menambahkan lagi dataset dengan rentang usia beragam agar mengetahui pengaruh usia terhadap PCOS [[12]](https://etd.umy.ac.id/id/eprint/115/).
