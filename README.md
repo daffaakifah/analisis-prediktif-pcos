@@ -73,6 +73,7 @@ Dataset tersebut tidak memiliki baik missing value maupun data yang duplikat.
   - Distribusi Antral Follicle untuk pengidap PCOS cenderung tinggi
 - Melihat distribusi variabel ketidakteraturan menstruasi dengan pie chart: <br>
   ![image](https://github.com/user-attachments/assets/384636bc-a57b-4016-a334-a2ee9e1dad68)
+  
   Sebanyak 53% pengidap PCOS dari dataset mengalami ketidakteraturan dalam menstruasi.
 - Melihat distribusi fitur dengan boxplot:
   ![image](https://github.com/user-attachments/assets/36aa0266-5da5-459a-a5a2-14cc0513118b)
@@ -96,12 +97,11 @@ Dataset tersebut tidak memiliki baik missing value maupun data yang duplikat.
   4. Testosterone_level(ng/dL) (Kadar Testosteron): <br>
      Memiliki korelasi positif dengan PCOS_Diagnosis (0.2). Kadar testosteron tinggi merupakan faktor resiko penting dalam PCOS [[3]](https://www.frontiersin.org/journals/reproductive-health/articles/10.3389/frph.2024.1475132/full).
   5. Antral Follicle Count (Jumlah Folikel Antral): <br>
-     Memiliki korelasi positif dengan PCOS_Diagnosis (0.19). Jumlah folikel antral yang tinggi juga merupakan ciri khas faktor PCOS [[4]](https://oaj.jurnalhst.com/index.php/jim/article/view/4513).
-<br>
-    PCOS_Diagnosis: <br>
-    Korelasi tertinggi dengan Menstrual_Irregularity (0.47) dan BMI (0.38), diikuti oleh Testosterone_level (0.2) dan 
-    Antral_Follicle_Count (0.19). Ini menunjukkan bahwa ketidakteraturan menstruasi dan obesitas (BMI tinggi) adalah faktor dominan yang 
-    terkait dengan PCOS dalam dataset ini.
+     Memiliki korelasi positif dengan PCOS_Diagnosis (0.19). Jumlah folikel antral yang tinggi juga merupakan ciri khas faktor PCOS [[4]](https://oaj.jurnalhst.com/index.php/jim/article/view/4513). <br>
+     PCOS_Diagnosis: <br>
+     Korelasi tertinggi dengan Menstrual_Irregularity (0.47) dan BMI (0.38), diikuti oleh Testosterone_level (0.2) dan
+      Antral_Follicle_Count (0.19). Ini menunjukkan bahwa ketidakteraturan menstruasi dan obesitas (BMI tinggi) adalah faktor dominan
+     yang terkait dengan PCOS dalam dataset ini.
 
 ## Data Preparation
 Teknik yang digunakan dalam penyiapan data *(Data Preparation)* yaitu:
