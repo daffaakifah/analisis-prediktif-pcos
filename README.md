@@ -239,12 +239,12 @@ Interpretasi hasil: <br>
 #### Visualisasi prediksi dan hasil dengan Confusion matrix: <br>
 ![image](https://github.com/user-attachments/assets/552d51a7-0856-4546-aec9-a03ffc9144ff)
 
-Terdapat satu kesalahan yang diprediksi oleh model Decision Tree, yaitu false negative, satu data yang aslinya menderita tetapi PCOS diprediksi Non-PCOS oleh model.
+Terdapat satu kesalahan yang diprediksi oleh model Decision Tree, yaitu false negative, satu data yang aslinya mengidap PCOS tetapi diprediksi Non-PCOS oleh model.
 <br>
 
 ![image](https://github.com/user-attachments/assets/2f1491a1-a94d-46c2-b8cf-fb0763f4d8d4)
 
-Terdapat dua kesalahan yang diprediksi oleh model Random Forest, yaitu false negative, dua data yang aslinya menderita tetapi PCOS diprediksi Non-PCOS oleh model.
+Terdapat dua kesalahan yang diprediksi oleh model Random Forest, yaitu false negative, dua data yang aslinya mengidap PCOS tetapi diprediksi Non-PCOS oleh model.
 
 #### Model pilihan
 Dari paparan di atas dapat diketahui bahwa model dengan algoritma Decision Tree memiliki kinerja yang terbaik. Untuk itu model tersebut yang akan dipilih untuk digunakan. <br>
